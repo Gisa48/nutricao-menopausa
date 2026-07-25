@@ -1,207 +1,158 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-  <meta charset="UTF-8">
-  <title>Nutrição & Suplementação na Menopausa – Guia da Mulher 50+</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Guia avançado de Nutrição & Suplementação na menopausa para mulheres 50+, focado em energia, sono, equilíbrio hormonal, gordura abdominal, estética e saúde cerebral. Conteúdo educativo, criado por Mayra Sterling Wellness.">
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      margin: 0;
-      background: #f8f3ea; /* creme claro */
-      color: #333;
-    }
-    .hero {
-      padding: 60px 20px;
-      text-align: center;
-      background: #e3dac8; /* bege suave */
-      color: #2b2b2b;
-    }
-    .hero h1 {
-      font-size: 32px;
-      margin-bottom: 10px;
-    }
-    .hero h2 {
-      font-size: 18px;
-      font-weight: normal;
-      margin-bottom: 20px;
-    }
-    .badge-list {
-      margin-top: 20px;
-      font-size: 14px;
-    }
-    .badge-list span {
-      margin: 0 10px;
-    }
-    .section {
-      background: #ffffff;
-      color: #2b2b2b;
-      padding: 40px 20px;
-    }
-    .section:nth-of-type(odd) {
-      background: #f3ebdf; /* alternar com outro bege suave */
-    }
-    .section h3 {
-      text-transform: uppercase;
-      font-size: 15px;
-      margin-bottom: 8px;
-      letter-spacing: 1px;
-      color: #7b8c5f; /* verde sálvia */
-    }
-    .section h2 {
-      font-size: 24px;
-      margin-bottom: 12px;
-      color: #3b3b3b;
-    }
-    .section p {
-      max-width: 900px;
-      margin: 0 auto 12px;
-      line-height: 1.6;
-    }
-    .section ul {
-      max-width: 900px;
-      margin: 0 auto 12px;
-      padding-left: 20px;
-    }
-    .section li {
-      margin-bottom: 6px;
-    }
-    .pillars {
-      max-width: 900px;
-      margin: 0 auto;
-    }
-    .pillars h4 {
-      font-size: 18px;
-      margin-top: 15px;
-      margin-bottom: 5px;
-      color: #5c6842; /* oliva */
-    }
-    .cta {
-      text-align: center;
-      padding: 40px 20px;
-      background: #7b8c5f; /* verde sálvia */
-      color: #fff;
-    }
-    .cta button {
-      background: #c8a678; /* dourado suave */
-      color: #fff;
-      border: none;
-      padding: 15px 30px;
-      font-size: 16px;
-      cursor: pointer;
-      border-radius: 4px;
-    }
-    .cta button:hover {
-      opacity: 0.9;
-    }
-    .footer {
-      text-align: center;
-      font-size: 12px;
-      padding: 20px;
-      background: #5c6842; /* oliva mais escuro */
-      color: #f8f3ea;
-    }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nutrição & Suplementação na Menopausa 50+</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        body { font-family: 'Plus Jakarta Sans', sans-serif; }
+        .bg-soft { background-color: #FAF7F2; }
+        .bg-card { background-color: #FFFFFF; }
+        .text-accent { color: #8C6A5D; }
+        .bg-accent { background-color: #8C6A5D; }
+        .bg-accent-light { background-color: #F3ECE7; }
+        .btn-gradient { background: linear-gradient(135deg, #10B981 0%, #059669 100%); }
+        .btn-gradient:hover { background: linear-gradient(135deg, #059669 0%, #047857 100%); }
+    </style>
 </head>
-<body>
+<body class="bg-soft text-gray-800 antialiased">
 
-  <div class="hero">
-    <h1>Nutrição & Suplementação na Menopausa</h1>
-    <h2>O guia da mulher 50+ para mais energia, sono e equilíbrio hormonal – e menos calorões e gordura abdominal</h2>
-    <!-- Aqui você pode inserir a capa do ebook como <img src="capa.png" alt="Capa do guia"> -->
-    <div class="badge-list">
-      <span>📥 Acesso imediato</span>
-      <span>♾ Conteúdo vitalício</span>
-      <span>📚 Conteúdo educativo (não substitui médico)</span>
-    </div>
-  </div>
+    <!-- HERO SECTION -->
+    <header class="relative bg-accent-light py-12 md:py-20 px-4 border-b border-rose-100">
+        <div class="max-w-5xl mx-auto text-center">
+            <span class="inline-block bg-white text-emerald-700 text-xs md:text-sm font-bold px-4 py-1.5 rounded-full shadow-sm mb-4 border border-emerald-100">
+                ✨ O Guia Definitivo para a Mulher 50+
+            </span>
+            <h1 class="text-3xl md:text-5xl font-extrabold text-gray-900 tracking-tight leading-tight mb-4">
+                Nutrição & Suplementação na Menopausa
+            </h1>
+            <p class="text-lg md:text-xl text-gray-600 max-w-3xl mx-auto mb-8 leading-relaxed">
+                Mais energia, sono reparador e equilíbrio hormonal — e menos calorões e gordura abdominal.
+            </p>
+            
+            <!-- BADGES -->
+            <div class="flex flex-wrap justify-center gap-3 text-xs md:text-sm text-gray-700 font-medium mb-8">
+                <span class="bg-white/80 px-3 py-1.5 rounded-lg shadow-xs"><i class="fa-solid fa-bolt text-amber-500 mr-1.5"></i> Acesso Imediato</span>
+                <span class="bg-white/80 px-3 py-1.5 rounded-lg shadow-xs"><i class="fa-solid fa-infinity text-emerald-500 mr-1.5"></i> Conteúdo Vitalício</span>
+                <span class="bg-white/80 px-3 py-1.5 rounded-lg shadow-xs"><i class="fa-solid fa-user-doctor text-blue-500 mr-1.5"></i> Material Educativo</span>
+            </div>
 
-  <div class="section">
-    <h3>Você se reconhece?</h3>
-    <h2>Não é só “a idade” – é uma fase inteira da sua vida</h2>
-    <p>
-      Se você tem 50+ e sente que está perdida entre sintomas da menopausa, dietas, suplementos e promessas milagrosas, este guia foi criado para te dar clareza.
-      Aqui você encontra uma visão organizada de nutrição e suplementação, em linguagem simples, para apoiar energia, sono, equilíbrio hormonal, metabolismo, estética e saúde cerebral.
-    </p>
-    <ul>
-      <li>Sente calorões, insônia, cansaço e uma barriga que parece não sair mesmo com esforço.</li>
-      <li>Já comprou suplementos “para menopausa” sem saber se precisava daquilo.</li>
-      <li>Lê sobre vitamina D, magnésio, hormônios, mas se sente confusa com tanta informação.</li>
-      <li>Quer cuidar de energia, sono, pele, cabelo e memória, mas sem cair em promessas mágicas.</li>
-    </ul>
-  </div>
+            <!-- BOTÃO CTA HERO -->
+            <a href="SEU_LINK_DO_HOTMART_AQUI" class="inline-flex items-center justify-center btn-gradient text-white font-bold text-lg px-8 py-4 rounded-xl shadow-lg hover:shadow-xl transition duration-300 transform hover:-translate-y-0.5 w-full sm:w-auto">
+                <i class="fa-solid fa-cart-shopping mr-2"></i> Quero Acessar o Guia Agora
+            </a>
+        </div>
+    </header>
 
-  <div class="section">
-    <h3>Os 6 pilares deste guia</h3>
-    <h2>Nutrição & suplementação avançada para mulheres 50+</h2>
-    <div class="pillars">
-      <h4>1. O Triângulo de Ouro: D3, K2 e Magnésio</h4>
-      <p>Entenda por que essa combinação é tão comentada para mulheres 50+, e como ela se relaciona com ossos, sistema cardiovascular, imunidade e equilíbrio geral, sempre com foco em segurança.</p>
+    <!-- VOCÊ SE RECONHECE? -->
+    <section class="py-16 px-4 max-w-5xl mx-auto">
+        <div class="text-center mb-12">
+            <h2 class="text-xs uppercase font-bold tracking-wider text-accent mb-2">Você se reconhece?</h2>
+            <h3 class="text-2xl md:text-4xl font-bold text-gray-900">Não é só “a idade” — é uma fase inteira da sua vida</h3>
+        </div>
 
-      <h4>2. Biogênese mitocondrial e energia celular</h4>
-      <p>Descubra o que são mitocôndrias e como alimentação e suplementação podem apoiar a produção de energia, para sentir menos fadiga no dia a dia.</p>
+        <div class="grid md:grid-cols-2 gap-8 items-center">
+            <div>
+                <img src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?q=80&w=800&auto=format&fit=crop" alt="Mulher radiante e saudável 50+" class="rounded-2xl shadow-md w-full object-cover h-80">
+            </div>
+            <div class="space-y-4">
+                <p class="text-gray-600 leading-relaxed">
+                    Se você tem 50+ e sente que está perdida entre sintomas da menopausa, dietas milagrosas e prateleiras cheias de suplementos sem saber o que funciona, este guia foi feito para você.
+                </p>
+                <ul class="space-y-3">
+                    <li class="flex items-start text-gray-700"><i class="fa-solid fa-circle-check text-emerald-500 mt-1 mr-3"></i> <span>Sente calorões, insônia, cansaço e gordura abdominal que parece não sair.</span></li>
+                    <li class="flex items-start text-gray-700"><i class="fa-solid fa-circle-check text-emerald-500 mt-1 mr-3"></i> <span>Já comprou suplementos "para menopausa" sem saber se precisava daquilo.</span></li>
+                    <li class="flex items-start text-gray-700"><i class="fa-solid fa-circle-check text-emerald-500 mt-1 mr-3"></i> <span>Lê sobre Vitamina D, Magnésio e Hormônios, mas fica confusa com tanta informação.</span></li>
+                    <li class="flex items-start text-gray-700"><i class="fa-solid fa-circle-check text-emerald-500 mt-1 mr-3"></i> <span>Quer cuidar do cabelo, pele, energia e memória com clareza e sem falsas promessas.</span></li>
+                </ul>
+            </div>
+        </div>
+    </section>
 
-      <h4>3. Modulação hormonal natural e fitohormônios</h4>
-      <p>Uma introdução clara aos fitohormônios e estratégias naturais de apoio ao equilíbrio hormonal, sem confundir com tratamento médico.</p>
+    <!-- CARDS DOS 6 PILARES -->
+    <section class="py-16 bg-white border-y border-gray-100">
+        <div class="max-w-6xl mx-auto px-4">
+            <div class="text-center mb-12">
+                <span class="text-xs uppercase font-bold tracking-wider text-accent">Conteúdo Completo</span>
+                <h2 class="text-2xl md:text-4xl font-bold text-gray-900 mt-1">Os 6 Pilares Deste Guia</h2>
+            </div>
 
-      <h4>4. Balanço metabólico e gordura abdominal</h4>
-      <p>Entenda por que a gordura abdominal aumenta na menopausa e quais pilares ajudam a reequilibrar o metabolismo, sem dietas extremas.</p>
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <!-- Pilar 1 -->
+                <div class="bg-soft p-6 rounded-2xl border border-stone-200 hover:shadow-md transition duration-200">
+                    <div class="w-12 h-12 bg-amber-100 text-amber-700 rounded-xl flex items-center justify-center font-bold text-xl mb-4">1</div>
+                    <h3 class="font-bold text-lg text-gray-900 mb-2">O Triângulo de Ouro: D3, K2 e Magnésio</h3>
+                    <p class="text-sm text-gray-600 leading-relaxed">Entenda por que essa combinação é fundamental para ossos, sistema cardiovascular e imunidade, com foco em segurança.</p>
+                </div>
 
-      <h4>5. Estética de dentro para fora</h4>
-      <p>Olhar para pele, cabelo, unhas e aparência madura com base em saúde e nutrição, em vez de apenas cosméticos.</p>
+                <!-- Pilar 2 -->
+                <div class="bg-soft p-6 rounded-2xl border border-stone-200 hover:shadow-md transition duration-200">
+                    <div class="w-12 h-12 bg-rose-100 text-rose-700 rounded-xl flex items-center justify-center font-bold text-xl mb-4">2</div>
+                    <h3 class="font-bold text-lg text-gray-900 mb-2">Biogênese Mitocondrial & Energia</h3>
+                    <p class="text-sm text-gray-600 leading-relaxed">Descubra como a alimentação e suplementação podem apoiar a energia celular para combater a fadiga diária.</p>
+                </div>
 
-      <h4>6. Saúde cerebral e nootrópicos</h4>
-      <p>Cuidados com memória, foco e clareza mental após os 50, incluindo conceitos básicos de nootrópicos e hábitos que protegem o cérebro.</p>
-    </div>
-  </div>
+                <!-- Pilar 3 -->
+                <div class="bg-soft p-6 rounded-2xl border border-stone-200 hover:shadow-md transition duration-200">
+                    <div class="w-12 h-12 bg-emerald-100 text-emerald-700 rounded-xl flex items-center justify-center font-bold text-xl mb-4">3</div>
+                    <h3 class="font-bold text-lg text-gray-900 mb-2">Modulação Hormonal & Fitoterápicos</h3>
+                    <p class="text-sm text-gray-600 leading-relaxed">Uma introdução clara aos fito-hormônios e estratégias naturais de apoio ao equilíbrio hormonal.</p>
+                </div>
 
-  <div class="section">
-    <h3>Bônus incluso</h3>
-    <h2>RESET: 10 Chás & Sucos Funcionais</h2>
-    <p>
-      Ao adquirir o guia, você também recebe o <strong>RESET: 10 Chás & Sucos Funcionais</strong> – um bônus com receitas funcionais que podem apoiar energia, digestão, sono e bem-estar dentro de uma abordagem de nutrição consciente.
-    </p>
-  </div>
+                <!-- Pilar 4 -->
+                <div class="bg-soft p-6 rounded-2xl border border-stone-200 hover:shadow-md transition duration-200">
+                    <div class="w-12 h-12 bg-indigo-100 text-indigo-700 rounded-xl flex items-center justify-center font-bold text-xl mb-4">4</div>
+                    <h3 class="font-bold text-lg text-gray-900 mb-2">Balanço Metabólico & Gordura Abdominal</h3>
+                    <p class="text-sm text-gray-600 leading-relaxed">Entenda por que a gordura abdominal aumenta na menopausa e os pilares para reequilibrar o metabolismo sem dietas extremas.</p>
+                </div>
 
-  <div class="section">
-    <h3>Para quem é</h3>
-    <h2>Feito para mulheres 50+</h2>
-    <ul>
-      <li>Mulheres em perimenopausa ou menopausa que querem se informar melhor sobre nutrição e suplementação.</li>
-      <li>Quem já compra suplementos, mas sente que está “atirando para todos os lados”.</li>
-      <li>Quem deseja uma visão avançada, porém simples, de energia, sono, metabolismo, estética e cérebro.</li>
-      <li>Quem prefere responsabilidade e clareza, em vez de promessas de cura fácil.</li>
-    </ul>
-  </div>
+                <!-- Pilar 5 -->
+                <div class="bg-soft p-6 rounded-2xl border border-stone-200 hover:shadow-md transition duration-200">
+                    <div class="w-12 h-12 bg-purple-100 text-purple-700 rounded-xl flex items-center justify-center font-bold text-xl mb-4">5</div>
+                    <h3 class="font-bold text-lg text-gray-900 mb-2">Estética de Dentro para Fora</h3>
+                    <p class="text-sm text-gray-600 leading-relaxed">Cuide de pele, cabelo, unhas e estética com base em nutrição profunda, Silício e Colágeno.</p>
+                </div>
 
-  <div class="section">
-    <h3>O que este guia não é</h3>
-    <h2>Respeito à sua saúde e às regras da plataforma</h2>
-    <ul>
-      <li>Não é consulta médica, nutricional ou endocrinológica.</li>
-      <li>Não substitui exames, remédios ou acompanhamento profissional.</li>
-      <li>Não promete cura, reversão completa de sintomas ou resultados garantidos.</li>
-      <li>Não indica doses específicas nem recomenda suplementos para casos individuais.</li>
-    </ul>
-    <p>
-      Este material é educativo: ele organiza informações, explica conceitos e te ajuda a conversar com seus profissionais de saúde com mais segurança.
-    </p>
-  </div>
+                <!-- Pilar 6 -->
+                <div class="bg-soft p-6 rounded-2xl border border-stone-200 hover:shadow-md transition duration-200">
+                    <div class="w-12 h-12 bg-blue-100 text-blue-700 rounded-xl flex items-center justify-center font-bold text-xl mb-4">6</div>
+                    <h3 class="font-bold text-lg text-gray-900 mb-2">Saúde Cerebral & Nootrópicos</h3>
+                    <p class="text-sm text-gray-600 leading-relaxed">Cuidados para memória, foco e clareza mental após os 50, combatendo a névoa mental (brain fog).</p>
+                </div>
+            </div>
+        </div>
+    </section>
 
-  <div class="cta">
-    <h2>Pronta para cuidar da sua menopausa com mais clareza?</h2>
-    <p>
-      Clique no botão abaixo para acessar agora o Guia Avançado de Nutrição & Suplementação na Menopausa e começar uma rotina de cuidado mais consciente.
-    </p>
-    <button onclick="window.location.href='LINK_HOTMART_AQUI'">
-      Quero acessar o guia
-    </button>
-  </div>
+    <!-- BÔNUS E OFERTA -->
+    <section class="py-16 px-4 max-w-4xl mx-auto">
+        <div class="bg-gradient-to-br from-amber-50 to-orange-50 border border-amber-200 rounded-3xl p-8 md:p-12 shadow-sm text-center relative overflow-hidden">
+            <span class="bg-amber-400 text-amber-950 font-extrabold text-xs px-4 py-1.5 rounded-full uppercase tracking-wider mb-4 inline-block">
+                Bônus Exclusivo Incluso
+            </span>
+            <h3 class="text-2xl md:text-3xl font-extrabold text-gray-900 mb-3">RESET: 10 Chás & Sucos Funcionais</h3>
+            <p class="text-gray-700 max-w-2xl mx-auto mb-8">
+                Receitas práticas e saborosas para potencializar o seu bem-estar diário, desinchar e melhorar o sono naturally.
+            </p>
+            <a href="SEU_LINK_DO_HOTMART_AQUI" class="inline-flex items-center justify-center btn-gradient text-white font-bold text-lg px-8 py-4 rounded-xl shadow-lg hover:shadow-xl transition duration-300 transform hover:-translate-y-0.5 w-full sm:w-auto">
+                <i class="fa-solid fa-lock mr-2"></i> Adquirir Guia + Bônus na Hotmart
+            </a>
+        </div>
+    </section>
 
-  <div class="footer">
-    <p>Mayra Sterling Wellness · Conteúdo educativo para mulheres 50+</p>
-  </div>
+    <!-- AVISO EDUCATIVO -->
+    <footer class="bg-gray-100 py-12 px-4 border-t border-gray-200 text-xs text-gray-500 text-center leading-relaxed">
+        <div class="max-w-4xl mx-auto space-y-3">
+            <p class="font-bold text-gray-600 uppercase tracking-wider">Aviso Importante</p>
+            <p>Este material possui caráter estritamente educacional e informativo. Ele não substitui consultas médicas, nutricionais ou endocrinológicas, nem diagnósticos ou tratamentos profissionais.</p>
+            <p>&copy; 2026 Nutrição & Suplementação na Menopausa. Todos os direitos reservados.</p>
+        </div>
+    </footer>
 
 </body>
 </html>
